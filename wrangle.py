@@ -34,7 +34,8 @@ def get_prepared_data():
     return df
 
 def wrangle_data():
-
+    '''Generates wrangled store data
+       Requiers raw_data file containing store data csv's to run'''
 
     # combine annual csv files into one dataframe
     df_2021 = pd.read_csv('raw_data/2021-2022.csv').sort_values('Date')
@@ -149,38 +150,49 @@ def clean_text_in_cart(value):
        spaces in values are replaced with hyphens'''
     
     clean_items = []
-    
+
+    # get list of items splitting on commas
     items = value.split(',')
     
+    # for each item
     for item in items:
     
+        # remove unnecessary text
         item = (item.lower()
                     .replace('(regular)', '')
                     .replace('  - too much caffeine', '')
                     .replace('  - carbonated beverage', ''))
-                  
+
+        # remove symbles except for underscore    
         item = re.sub(r'[^a-z0-9\s_]', '' , item)
     
+        # replace word spaces with underscores
         item = item.strip().replace(' ','_')
     
+        # ensure only one underscore between words
         item = re.sub('_+', '_', item)
 
+        # add clean item to empty list
         clean_items.append(item)
     
+    # join clean listed items
     value = ','.join(clean_items)
     
     return value
 
 
 def get_number_of_items(value, item):
-    '''Takes in a string value of comma seperated transaction items and values
-       and an item name
+    '''Takes in a string value of comma seperated transaction items and values and an item name
        Returns the number of matching items indicated by the string'''
     
+    # capture number of 'item' purchased if coded for more than one items purchased
     pattern = rf"(((\d+)_x_)?{re.escape(item)}\b)"
 
+    # find all instances of pattern matches in the string
     matches = re.findall(pattern, value)
 
+    # add all pattern matches together 
+    # if pattern match does not contain a digit add 1 for that pattern match
     total = sum([int(match[-1]) if match[-1].isdigit() == True else 1 for match in matches ])
 
     return total 

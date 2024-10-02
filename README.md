@@ -19,8 +19,8 @@ In this repository I will Wrangle, prepare, and document preparation of transact
     * discount_type, type of discount applied to purchase
     * event_type, type of transaction
 * Handeled null values
-    * 3,445 nulls in cust_id were imputed with 'unknown'<br>
-    * 10,236 nulls in discount_type were imputed with 'No Discount'<br>
+    * 3,445 nulls in cust_id were imputed with 'unknown'
+    * 10,236 nulls in discount_type were imputed with 'No Discount'
     * 3 rows were dropped that contained null values in cart and no other useful data
 * Converted columns containing dollar ammounts from string to float
 * Converted time to datetime and set it as the index

@@ -36,7 +36,7 @@ Items in master list were manually sorted using the following criteria
 |Accessories|Items that enhance game play or are used to store game play items|Binders, Dice, Card Sleeves|
 |Board Games|Self contained board games and board game expansions|Terraforming Mars, LOTR Journeys in Middle Earth|
 |Concessions|Food and drink items|drinks, candy|
-|Minis/Models|Miniature models, contained in customizable table top minis games or sold as stand alone minis or sets of minis Does not include boardgames that contain minis|Warhammer Minis, D&D Minis|
+|Minis/Models|Miniature models, customizable "war game" minis, RPG support minis, does not include boardgames that contain minis|Warhammer Minis, D&D Minis|
 |Modeling Supplies|Items used to enhance appearance of minis/models|Painting Supplies, Model Bases|
 |Role Playing Games|Books and map packs for Role Playing Games|Dungeons and Dragons Books, Pathfinder Books|
 |Trading Card Games|Cards for customizable card games|Magic, Pokemon, Yugio|

@@ -5,7 +5,7 @@
 In this repository I will wrangle, prepare, and document preparation of transaction data from a local game store for use in future projects
 
 ## Wrangle Method
-* The original CSV's contained annual transaction data for the years 2021, 2022, 2024
+* The original CSV's contained annual transaction data for the years 2021, 2022, 2023
 * After merging the data in these files there were 19,721 rows each representing one transaction and 51 columns each providing details about those transactions
 * Remade the data frame keeping only the 9 columns I was interested in 
 * Coumns were then renamed for clarity and ease of use 

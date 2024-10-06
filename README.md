@@ -2,7 +2,7 @@
 
 ## Purpose:
 
-wrangle and document preparation of transaction data from a local game store for use in future projects
+Wrangle and document preparation of transaction data from a local game store for use in future projects
 
 ## Wrangle Method
 * The original CSV's contained annual transaction data for the years 2021, 2022, 2023
